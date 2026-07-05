@@ -3,34 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Henry Guisa — Música</title>
-<meta name="description" content="Henry Guisa · artista de Campo Grande, MS. Pop, funk e brasilidade em beats cheios de punch. Ouça o novo single em todas as plataformas.">
-
-<!--
-  ============================================================
-  COMO EDITAR ESTE SITE
-  ============================================================
-  1) O logo real (henry-logo.png) já está aplicado no menu, no
-     hero e no rodapé. Se quiser trocar por outra versão, salve
-     o novo arquivo com o MESMO nome "henry-logo.png" na mesma
-     pasta do index.html.
-  2) Troque o nome do single e a arte de capa: procure por
-     "TROQUE-SINGLE" na seção #single.
-  3) Troque os links de streaming: procure por "TROQUE-LINK".
-  4) Troque os links de redes sociais: procure por "TROQUE-SOCIAL".
-  5) Troque as fotos suas: procure por "TROQUE-FOTO" nos
-     comentários e substitua o background dos elementos
-     .photo-slot / .gal-tile por:
-     background-image: url('sua-foto.jpg');
-  5.1) Foto de fundo do hero (topo da página): salve sua foto
-     como "foto-hero.jpg" na mesma pasta do index.html, ou
-     procure por "TROQUE-FOTO" na regra .hero no CSS e ajuste
-     o nome do arquivo.
-  6) O formulário de contato no fim da página é só front-end.
-     Procure por "TROQUE-FORM" para ligar num serviço real
-     (Formspree, WhatsApp link, mailto, etc).
-  ============================================================
--->
+<title>Henry Guisa — Sei De Cor</title>
+<meta name="description" content="Henry Guisa · artista de Campo Grande, MS. Pop e Indie. Ouça o novo single em todas as plataformas.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,15 +12,15 @@
 
 <style>
   :root{
-    /* ---- token system: cores da marca ---- */
-    --c-slate:   #394648;   /* fundo principal — dusk de concreto */
-    --c-olive:   #625026;   /* fundo secundário — latão / ferrugem */
-    --c-steel:   #8AAAAD;   /* névoa / texto secundário / linhas */
-    --c-magenta: #B25698;   /* acento neon — energia / hover */
-    --c-purple:  #5A2E5D;   /* roxo real do seu logo — identidade */
-    --c-black:   #12181a;   /* camada mais profunda */
-    --c-chrome:  #e7edec;   /* títulos — brilho cromado */
-    --c-paper:   #cbc0a3;   /* corpo de texto sobre fundo escuro */
+
+    --c-slate:   #394648;
+    --c-olive:   #625026;
+    --c-steel:   #8AAAAD;
+    --c-magenta: #B25698;
+    --c-purple:  #5A2E5D;
+    --c-black:   #12181a;
+    --c-chrome:  #e7edec;
+    --c-paper:   #cbc0a3;
 
     --font-display: 'Unbounded', sans-serif;
     --font-label:   'Rajdhani', sans-serif;
@@ -105,9 +79,6 @@
     margin:0 auto;
   }
 
-  /* ---------------------------------------------------------
-     GRAIN + SCANLINE OVERLAY (fixo sobre toda a página)
-  --------------------------------------------------------- */
   .grain{
     position:fixed; inset:0;
     pointer-events:none;
@@ -130,9 +101,6 @@
     );
   }
 
-  /* ---------------------------------------------------------
-     DOCK LATERAL DE REDES SOCIAIS
-  --------------------------------------------------------- */
   .dock{
     position:fixed;
     z-index:50;
@@ -154,9 +122,6 @@
   .dock a:hover{ color:var(--c-magenta); transform:translateY(-3px); }
   .dock svg{ width:18px; height:18px; }
 
-  /* ---------------------------------------------------------
-     LOGO REAL (henry-logo.png) — nav, hero sticker, rodapé
-  --------------------------------------------------------- */
   .brand-logo{
     display:block;
     filter:drop-shadow(0 6px 14px rgba(0,0,0,.45));
@@ -184,9 +149,6 @@
     }
   }
 
-  /* ---------------------------------------------------------
-     HERO
-  --------------------------------------------------------- */
   .hero{
     position:relative;
     min-height:100svh;
@@ -200,9 +162,6 @@
     background-size:cover;
     background-position:center;
   }
-  /* TROQUE-FOTO: troque 'foto-hero.jpg' pela sua foto de fundo.
-     Salve o arquivo com esse mesmo nome na pasta do index.html,
-     ou ajuste o nome acima pro nome do seu arquivo. */
 
   .skyline{ position:absolute; inset:0; z-index:1; }
   .sky-layer{ position:absolute; bottom:0; left:0; width:140%; }
@@ -299,9 +258,6 @@
   .scroll-cue svg{ width:14px; height:14px; animation:bob 1.6s ease-in-out infinite; }
   @keyframes bob{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(6px);} }
 
-  /* ---------------------------------------------------------
-     STAMP DIVIDER entre seções
-  --------------------------------------------------------- */
   .stamp-divider{
     display:flex; align-items:center; gap:1rem;
     max-width:1180px; margin:0 auto;
@@ -317,9 +273,6 @@
     white-space:nowrap;
   }
 
-  /* ---------------------------------------------------------
-     SINGLE EM DESTAQUE
-  --------------------------------------------------------- */
   .single-grid{
     display:grid;
     gap:2.5rem;
@@ -339,8 +292,6 @@
     display:flex; align-items:center; justify-content:center;
     box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
   }
-  /* TROQUE-FOTO: troque o background do .cover acima por
-     background-image:url('capa-do-single.jpg'); background-size:cover; */
 
   .cover-mark{
     font-family:var(--font-display);
@@ -379,9 +330,6 @@
   .btn.solid{ background:var(--c-magenta); border-color:var(--c-magenta); color:var(--c-black); }
   .btn.solid:hover{ background:var(--c-chrome); border-color:var(--c-chrome); }
 
-  /* ---------------------------------------------------------
-     GRID DE PLATAFORMAS
-  --------------------------------------------------------- */
   .platform-grid{
     display:grid;
     grid-template-columns:1fr;
@@ -418,9 +366,6 @@
   }
   .platform-card .txt span{ font-size:.78rem; color:var(--c-steel); }
 
-  /* ---------------------------------------------------------
-     SOBRE
-  --------------------------------------------------------- */
   .about-grid{ display:grid; gap:2.5rem; align-items:center; }
   @media(min-width:800px){ .about-grid{ grid-template-columns:1fr 1.15fr; } }
 
@@ -431,8 +376,7 @@
     position:relative;
     display:flex; align-items:flex-end;
   }
-  /* TROQUE-FOTO: substitua o background do .photo-slot acima por sua foto:
-     background-image:url('sua-foto.jpg'); background-size:cover; background-position:center; */
+
   .photo-slot span{
     font-family:var(--font-label);
     font-size:.7rem;
@@ -453,9 +397,6 @@
     padding:.35em .8em; clip-path:var(--chip-sm);
   }
 
-  /* ---------------------------------------------------------
-     GALERIA / ESPAÇO VISUAL
-  --------------------------------------------------------- */
   .gal-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -484,12 +425,7 @@
   .gal-tile.g2{ background:linear-gradient(160deg,var(--c-magenta),var(--c-slate)); }
   .gal-tile.g3{ background:linear-gradient(160deg,var(--c-steel),var(--c-black)); }
   .gal-tile.g4{ background:linear-gradient(160deg,var(--c-slate),var(--c-olive)); }
-  /* TROQUE-FOTO: em cada .gal-tile acima, troque o "background"
-     por background-image:url('sua-foto.jpg'); background-size:cover; */
 
-  /* ---------------------------------------------------------
-     CONECTE-SE (parede social)
-  --------------------------------------------------------- */
   .social-wall{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -510,9 +446,6 @@
   .social-card:hover svg{ color:var(--c-magenta); }
   .social-card strong{ font-family:var(--font-label); text-transform:uppercase; font-size:.85rem; letter-spacing:.05em; color:var(--c-chrome); }
 
-  /* ---------------------------------------------------------
-     CONTATO / BOOKING
-  --------------------------------------------------------- */
   .contact-box{
     background:rgba(18,24,26,.5);
     border:1px solid rgba(138,170,173,.25);
@@ -565,9 +498,40 @@
   }
   .form-success.show{ display:block; }
 
-  /* ---------------------------------------------------------
-     FOOTER
-  --------------------------------------------------------- */
+  .lyrics-box{
+    background:rgba(18,24,26,.5);
+    border:1px solid rgba(138,170,173,.25);
+    clip-path:var(--chip);
+    padding:clamp(1.5rem,5vw,2.75rem);
+    margin-top:2rem;
+    display:grid;
+    gap:2rem;
+  }
+  @media(min-width:800px){ .lyrics-box{ grid-template-columns:1.1fr .9fr; } }
+
+  .lyrics-text p{
+    font-family:var(--font-body);
+    line-height:1.9;
+    color:var(--c-chrome);
+    opacity:.92;
+    margin-bottom:1.2rem;
+    white-space:pre-line;
+  }
+
+  .lyrics-notes{
+    border-left:1px solid rgba(138,170,173,.3);
+    padding-left:clamp(1rem,3vw,1.6rem);
+  }
+  .lyrics-notes h3{
+    font-size:1.1rem;
+    margin-bottom:.8rem;
+  }
+  .lyrics-notes p{
+    line-height:1.7;
+    opacity:.85;
+    margin-bottom:1rem;
+  }
+
   footer{
     padding:2.5rem clamp(1.25rem,6vw,4rem) 6rem;
     text-align:center;
@@ -586,14 +550,12 @@
 <div class="grain"></div>
 <div class="scanlines"></div>
 
-<!-- ============ MARCA FIXA (logo real) ============ -->
 <a href="#top" aria-label="Henry Guisa — topo da página">
   <img class="brand-logo nav-logo" src="henry-logo.png" alt="Henry Guisa">
 </a>
 
-<!-- ============ DOCK DE REDES SOCIAIS (fixo) ============ -->
 <nav class="dock" aria-label="Redes sociais">
-  <!-- TROQUE-SOCIAL: troque cada href pelo seu link real -->
+
   <a href="https://instagram.com/henriguisa" target="_blank" rel="noopener" aria-label="Instagram">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
   </a>
@@ -611,11 +573,10 @@
   </a>
 </nav>
 
-<!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <div class="skyline" aria-hidden="true">
     <svg class="sky-layer mid" viewBox="0 0 900 300" preserveAspectRatio="none" style="height:38vh;">
-      <!-- poste de luz -->
+
       <g fill="#4b3f21">
         <rect x="700" y="40" width="7" height="230"/>
         <path d="M703 40 q60 -6 60 34 l-10 0 q-4 -26 -50 -22 z"/>
@@ -624,9 +585,9 @@
       <circle cx="763" cy="76" r="20" fill="#f2c065" opacity=".18"/>
     </svg>
     <svg class="sky-layer front" viewBox="0 0 900 220" preserveAspectRatio="none" style="height:24vh;">
-      <!-- rampa / bloco de skate -->
+
       <path d="M0 220 L0 150 L620 150 L680 110 L900 110 L900 220 Z" fill="#101516"/>
-      <!-- figura minimalista em salto -->
+
       <g stroke="#cbc0a3" stroke-width="7" stroke-linecap="round" fill="none" opacity=".5">
         <path d="M735 95 q10 -22 30 -20"/>
         <path d="M765 75 q18 4 22 26"/>
@@ -653,19 +614,17 @@
   </div>
 </header>
 
-<!-- ============ SINGLE EM DESTAQUE ============ -->
 <section class="section" id="single">
   <div class="eyebrow">Lançamento</div>
-  <!-- TROQUE-SINGLE: troque o nome do single abaixo (capa, título, descrição e links) -->
+
   <div class="single-grid">
     <div class="cover"></div>
-    <!-- TROQUE-FOTO acima: veja comentário .cover no CSS -->
 
     <div class="single-info">
       <h2>"Sei De<br>Cor"</h2>
       <p>Quem nunca se envolveu mais do que deveria e ficou com um triplex de lembranças daquela pessoa?</p>
       <div class="stream-row">
-        <!-- TROQUE-LINK: troque cada href pelo link real da faixa -->
+
         <a class="btn solid" href="https://open.spotify.com/intl-pt/track/5MJnD09HUdZnJwHJBpW6Jn?si=ddab7728f3d24299" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="M7 10c3-1 7-1 10 1M7.5 13c2.5-.8 6-.6 8.3.8M8 16c2-.6 4.7-.4 6.4.8" stroke="#12181a" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
           Spotify
@@ -689,13 +648,12 @@
 
 <div class="stamp-divider" aria-hidden="true"><div class="line"></div><span>Ouça em toda parte</span><div class="line"></div></div>
 
-<!-- ============ GRID DE PLATAFORMAS ============ -->
 <section class="section" id="stream">
   <h2 style="font-size:clamp(2rem,6vw,3rem);">Streaming</h2>
   <p style="max-width:50ch;margin-top:.6rem;opacity:.85;">Todos os lançamentos de Henry Guisa, direto pra sua plataforma favorita.</p>
 
   <div class="platform-grid">
-    <!-- TROQUE-LINK em cada card abaixo -->
+
     <a class="platform-card" href="https://open.spotify.com/intl-pt/artist/6I3htknhzI05K6jBarar63?si=-bVrXJQrSP6LgSLmCrVVzw" target="_blank" rel="noopener">
       <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M7.5 10c3-1 6.5-.8 9 1M7.8 13c2.4-.7 5.4-.5 7.5 1M8.2 16c1.8-.5 4-.4 5.6.8"/></svg></span>
       <span class="txt"><strong>Spotify</strong><span>Ouvir agora →</span></span>
@@ -717,15 +675,13 @@
 
 <div class="stamp-divider" aria-hidden="true"><div class="line"></div><span>Sobre</span><div class="line"></div></div>
 
-<!-- ============ SOBRE ============ -->
 <section class="section" id="sobre">
   <div class="about-grid">
     <div class="photo-slot"><span></span></div>
-    <!-- TROQUE-FOTO acima: veja comentário .photo-slot no CSS -->
 
     <div class="about-copy">
-      <p>Sou de Campo Grande, MS, e desde pequeno tenho uma conexão forte com música — pra mim ela transmite sentimento, conforto e um tipo de entendimento que é universal. Chego a ouvir música umas 12 horas por dia.</p>
-      <p>Foram 3 anos de violão, incluindo orquestra, e mais 2 anos de canto no SESC Lageado — mas foi quando comecei a produzir na minha DAW que eu realmente me encontrei.</p>
+      <p>Sou de Campo Grande, MS, e desde pequeno tenho uma conexão forte com música, pra mim ela transmite sentimento, conforto e um tipo de entendimento que é universal.</p>
+      <p>Foram 3 anos de violão, incluindo orquestra, e mais 2 anos de canto no SESC Lageado, mas foi quando comecei a produzir na minha DAW(Ableton for ever) que eu realmente me encontrei.</p>
       <p>Inspirado por Jamiroquai, Dua Lipa e PinkPantheress, tento misturar sentimento, expressão e brasilidade em beats animados e cheios de punch. Não me vejo fazendo outra coisa além de música.</p>
       <div class="tag-row">
         <span class="tag">Indie</span>
@@ -739,7 +695,6 @@
 
 <div class="stamp-divider" aria-hidden="true"><div class="line"></div><span>Espaço</span><div class="line"></div></div>
 
-<!-- ============ GALERIA / ESPAÇO VISUAL ============ -->
 <section class="section" id="espaco">
   <h2 style="font-size:clamp(2rem,6vw,3rem);">Galeria</h2>
   <p style="max-width:50ch;margin-top:.6rem;opacity:.85;">Bastidores, fotos e outras coisinhas.</p>
@@ -753,11 +708,10 @@
 
 <div class="stamp-divider" aria-hidden="true"><div class="line"></div><span>Conecte-se</span><div class="line"></div></div>
 
-<!-- ============ REDES SOCIAIS (parede) ============ -->
 <section class="section" id="conecte">
   <h2 style="font-size:clamp(2rem,6vw,3rem);">Conecte-se</h2>
   <div class="social-wall">
-    <!-- TROQUE-SOCIAL em cada card abaixo -->
+
     <a class="social-card" href="https://instagram.com/henriguisa" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
       <strong>Instagram</strong>
@@ -777,6 +731,12 @@
       </svg>
       <strong>YouTube</strong>
       </a>
+      <a class="social-card" href="https://music.youtube.com/@HenryGuisa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16.5c-3.59 0-6.5-2.91-6.5-6.5S8.41 5.5 12 5.5s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm-1.5 7.5v-5l4.5 2.5-4.5 2.5z" />
+        </svg>
+        <strong>YouTube Music</strong>
+      </a>
       <a class="social-card" href="https://on.soundcloud.com/AjotJDWSQhqRs5lxk5" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path
@@ -793,16 +753,12 @@
 
 <div class="stamp-divider" aria-hidden="true"><div class="line"></div><span>Contato</span><div class="line"></div></div>
 
-<!-- ============ CONTATO / BOOKING ============ -->
 <section class="section" id="contato">
   <h2 style="font-size:clamp(2rem,6vw,3rem);">Fale comigo</h2>
   <p style="max-width:50ch;margin-top:.6rem;opacity:.85;">Shows, parcerias ou só pra trocar uma ideia sobre a cena. Preenche o formulário.</p>
 
   <div class="contact-box">
-    <!-- TROQUE-FORM: este form é só front-end.
-         Pra receber de verdade, troque a tag <form> por algo como:
-         <form action="https://formspree.io/f/SEU_ID" method="POST">
-         ou redirecione o botão pra um link do WhatsApp. -->
+
     <form action="https://formspree.io/f/xojorvep" method="POST" id="contactForm" novalidate>
       <div class="field">
         <label for="nome">Nome</label>
@@ -823,6 +779,124 @@
   </div>
 </section>
 
+<div class="stamp-divider" aria-hidden="true"><div class="line"></div><span>Letra & Notas</span><div class="line"></div></div>
+
+<section class="section" id="letra">
+  <h2 style="font-size:clamp(2rem,6vw,3rem);">"Sei De Cor"</h2>
+  <p style="max-width:50ch;margin-top:.6rem;opacity:.85;">A letra completa e os bastidores da composição do novo single.</p>
+
+  <div class="lyrics-box">
+    <div class="lyrics-text">
+      <p>
+        Eu, ainda vejo
+        Um pouco de você
+        Em tudo que eu tenho pra dizer
+        Sei de cor todas as canções que
+        Você gosta de ouvir
+      
+        Só não sei
+        Como você fez pra
+        Esquecer do que a gente viveu
+      
+        (Ah) Já esqueceu
+        (Ah) De quem sou eu
+        Cê não tem dó
+        De me deixar só
+      
+        Eu te aconselhei
+        Que você devia amar
+        Sem medo de errar
+      
+        E o que você fez?
+        Em menos de um mês
+        Me deixou sem medo de machucar
+      
+        (Ah) Já esqueceu (Já esqueceu)
+        (Ah) De quem sou eu (De quem sou eu)
+        Cê não tem dó
+        De me deixar...
+      
+        Você não tem dó de ninguém
+        Só gosta de quem te convém, meu bem
+      
+        Eu já não te conheço mais
+        Não sei o que cê faz
+        Mas sua memória não me deixa em paz
+      
+        Você não tem dó de ninguém
+        Só gosta de quem te convém, meu bem
+      
+        Meu bem!
+        (Meu bem!)
+      
+        Eu, ainda vejo
+        Um pouco de você
+        Em tudo que eu tenho pra dizer
+      
+        Sei de cor todas as canções que
+        Você gosta de ouvir
+      
+        Só não sei
+        Como você fez pra
+        Esquecer do que a gente viveu
+      
+        (Amor igual ao meu
+        Com mais ninguém cê vai ter
+        Pode esquecer
+        Que igual a gente
+        Nada vai parecer
+        Eu te conheço
+        De um jeito que é difícil de esquecer
+        Eu só queria
+        Ter a chance de te dizer)
+      </p>
+    </div>
+    <div class="lyrics-notes">
+      <h3>Notas do single</h3>
+    
+      <p>
+        <strong>Sei de Cor</strong> foi a segunda track que eu compus pra esse projeto. No início ela se chamava "Quem Sou
+        Eu", mas o nome atual tem muito mais presença (igual a musica da Marilia Mendonça). Eu queria uma vibe colegial, início de filme <em>coming of age</em>
+        dos anos 2000.
+        <br><br>
+    
+        No começo ela era uma balada mais lenta, com cerca de 90 BPM. Inclusive, <em>We Don't Talk Anymore</em>, do Charlie
+        Puth e da Selena Gomez, era a minha maior referência. A música é em Dó sustenido menor (C♯ minor), e eu queria
+        seguir essa mesma atmosfera.
+        <br><br>
+    
+        Mas eu não sei o que aconteceu na hora de montar os acordes (eu ainda estava aprendendo). A música acabou ficando em
+        Mi maior (a relativa maior de Dó sustenido menor), uma tonalidade que soa muito mais felizinha, sendo que a ideia
+        era fazer uma <em>breakup song</em> triste.
+        <br><br>
+    
+        Só que, como o extraordinário às vezes nasce dos erros, eu decidi manter. Aumentei o BPM e transformei tudo numa
+        faixa mais animada, mesmo com uma letra bem solitária. Aliás, eu adoro isso em músicas: um gosto agridoce, amargo e
+        doce ao mesmo tempo.
+        <br><br>
+    
+        Fun fact: a música usa um sample daqueles telefones de brinquedo que eram muito comuns nos anos 2000, pra dar a
+        sensação de que alguém tá te ligando e você não tá muito afim de atender. Não só isso, mas ele também soa como um
+        latido de cachorro (o que eu sou às vezes quando tô apaixonado). Outra coisa que faz parte do meu Head Cannon é que os coros de "Ah ah ah" soam
+        como risadas, rindo da cara da situação do eu lírico sofredor.
+        </p>
+        
+        <div><iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/5MJnD09HUdZnJwHJBpW6Jn?utm_source=generator&si=e2788ec0fa874b7d"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175"
+            style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            src="https://embed.music.apple.com/br/song/sei-de-cor/6786020976"></iframe>
+        </div>
+        
+        
+        
+        </div>
+        </div>
+        </section>
+
 <footer>
   <img class="brand-logo footer-logo" src="henry-logo.png" alt="Henry Guisa">
   <p>© 2026 Henry Guisa</p>
@@ -833,7 +907,6 @@
   "use strict";
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Equalizer ambiente no hero ---------- */
   var eq = document.getElementById('heroEq');
   var BAR_COUNT = 48;
   var bars = [];
@@ -855,7 +928,6 @@
     setInterval(randomizeBars, 550);
   }
 
-  /* ---------- Parallax simples no skyline ---------- */
   var back = document.querySelector('.sky-layer.back');
   var mid = document.querySelector('.sky-layer.mid');
   var front = document.querySelector('.sky-layer.front');
@@ -868,7 +940,6 @@
     }, { passive: true });
   }
 
-  /* ---------- Glitch ambiente ocasional no nome ---------- */
   var heroName = document.getElementById('heroName');
   if (!reduceMotion){
     setInterval(function(){
@@ -877,7 +948,6 @@
     }, 5000);
   }
 
-/* ---------- Formulário de contato (envia pro Formspree) ---------- */
   var form = document.getElementById('contactForm');
   var success = document.getElementById('formSuccess');
   form.addEventListener('submit', function(e){
